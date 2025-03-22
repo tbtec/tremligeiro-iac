@@ -1,10 +1,10 @@
-name: destroy
+name: DestroyInfrastructure
 
 on:
   workflow_dispatch:
   
 jobs:
-  destroy:
+  deploy:
     name: Destroy
     runs-on: ubuntu-latest
     defaults:
@@ -38,4 +38,5 @@ jobs:
         continue-on-error: true
 
       - name: Terraform Destroy
-        run: terraform destroy -input=false -auto-approve
+        if: github.ref == 'refs/heads/main'
+        run: terraform destroy -auto-approve

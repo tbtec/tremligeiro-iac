@@ -1,14 +1,11 @@
-name: create
+name: CreateInfraestructure
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - '**'
   
 jobs:
   deploy:
-    name: Deploy
+    name: Create Infraestructure 
     runs-on: ubuntu-latest
     defaults:
        run:
@@ -45,4 +42,5 @@ jobs:
         run: exit 1
 
       - name: Terraform Apply
-        run: terraform apply -input=false -auto-approve
+        if: github.ref == 'refs/heads/main'
+        run: terraform apply -auto-approve

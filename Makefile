@@ -1,20 +1,20 @@
-init:
+tf-init:
 	@cd tf \
 		&& terraform init -reconfigure
 
-plan:
+tf-plan:
 	@cd tf \
-		&& terraform plan -var-file=config.tfvars
-
-delete:
+		&& terraform plan 
+		
+tf-delete:
 	@cd tf \
 		&& rm -r .terraform \
 		&& rm .terraform.lock.hcl
 
-apply:
+tf-apply:
 	@cd tf \
 		&& terraform apply 
 
-destroy:
+tf-destroy:
 	@cd tf \
 		&& terraform destroy -auto-approve

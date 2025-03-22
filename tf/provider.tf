@@ -11,6 +11,7 @@ terraform {
   backend "s3" {
     region = "us-east-1"
     key    = "terraform/terraform.tfstate"
+    bucket = "tremligeiro-tf"
   }
 
 #   backend "local" {

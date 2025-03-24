@@ -21,11 +21,6 @@ variable "cluster_name" {
   default     = "tremligeiro"
 }
 
-variable "cluster_version" {
-  description = "The version of Kubernetes to use"
-  default     = "1.29"
-}
-
 variable "vpc_cidr" {
   type        = string
   description = "The CIDR block for the VPC"

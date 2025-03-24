@@ -16,11 +16,6 @@ variable "tags" {
 #   description = "The name of the S3 bucket to store the tfstate file"
 # }
 
-variable "cluster_name" {
-  description = "The name of the EKS cluster"
-  default     = "tremligeiro"
-}
-
 variable "vpc_cidr" {
   type        = string
   description = "The CIDR block for the VPC"

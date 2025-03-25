@@ -27,4 +27,4 @@ make tf-apply
 ```
 
 ### Cloud
-Configure GitHub Actions enviroment variables, then, starts DeploLambda workflow.
+Configure GitHub Actions enviroment variables, then, starts DeployInfrascruture workflow.

@@ -1,4 +1,3 @@
-
 variable "region" {
   description = "The default region to use for AWS"
   default     = "us-east-1"
@@ -11,10 +10,6 @@ variable "tags" {
     App = "cluster"
   }
 }
-
-# variable "bucket_name" {
-#   description = "The name of the S3 bucket to store the tfstate file"
-# }
 
 variable "vpc_cidr" {
   type        = string

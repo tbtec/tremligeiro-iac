@@ -6,11 +6,11 @@ This applications is responsible for infrastructure of the restaurant "Trem Lige
 
 ### Requirements
 
--   [Make](https://www.gnu.org/software/make/)
--   [AWS CLI](https://aws.amazon.com/pt/cli/)
--   [Terraform 1.11.2](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
+- [Make](https://www.gnu.org/software/make/)
+- [AWS CLI](https://aws.amazon.com/pt/cli/)
+- [Terraform 1.11.2](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
 
-### Building 
+### Building
 
 Use this commands to init local terraform.
 
@@ -27,4 +27,5 @@ make tf-apply
 ```
 
 ### Cloud
+
 Configure GitHub Actions enviroment variables, then, starts DeployInfrascruture workflow.

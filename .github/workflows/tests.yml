@@ -39,7 +39,7 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: terraform init -backend-config="bucket=${{ secrets.AWS_BUCKET_TERRAFORM }}"
+        run: terraform init -backend-config="bucket=${{ vars.AWS_BUCKET_TERRAFORM }}"
 
       - name: Terraform Format
         id: fmt
